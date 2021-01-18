@@ -1,6 +1,6 @@
 {
   "name": "@hollowman6/canvas-explosion-click",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Canvas that explode after a click. (点击后粒子爆炸喷墨)",
   "main": "canvas-explosion-click.js",
   "scripts": {

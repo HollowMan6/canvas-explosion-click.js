@@ -97,23 +97,23 @@
                     var g = this.color.match(/([0-9]+)/g)[1];
                     var b = this.color.match(/([0-9]+)/g)[2];
 
-                    // Gradient
+                    // // Gradient
 
-                    var spread = 1.5;
-                    var gradient = ctx.createRadialGradient(
-                        this.x, this.y, this.r,
-                        this.x, this.y, this.r * spread);
+                    // var spread = 1.5;
+                    // var gradient = ctx.createRadialGradient(
+                    //     this.x, this.y, this.r,
+                    //     this.x, this.y, this.r * spread);
 
-                    gradient.addColorStop(0, 'rgba(' + r + ', ' + g + ', ' + b + ', 0.3)');
-                    gradient.addColorStop(1, 'rgba(' + r + ', ' + g + ', ' + b + ', 0)');
+                    // gradient.addColorStop(0, 'rgba(' + r + ', ' + g + ', ' + b + ', 0.3)');
+                    // gradient.addColorStop(1, 'rgba(' + r + ', ' + g + ', ' + b + ', 0)');
 
-                    ctx.globalCompositeOperation = 'lighter';
-                    ctx.fillStyle = gradient;
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.r * spread, 0, 2 * Math.PI, false);
-                    ctx.fill();
-                    ctx.closePath();
-                    ctx.globalCompositeOperation = 'source-over';
+                    // ctx.globalCompositeOperation = 'lighter';
+                    // ctx.fillStyle = gradient;
+                    // ctx.beginPath();
+                    // ctx.arc(this.x, this.y, this.r * spread, 0, 2 * Math.PI, false);
+                    // ctx.fill();
+                    // ctx.closePath();
+                    // ctx.globalCompositeOperation = 'source-over';
 
                     // Aberration
 
@@ -277,10 +277,6 @@
                 this.objects.forEach(function (obj) {
                     if (obj) obj.update(dt);
                 });
-
-                var amount = this.objects.reduce(function (sum, explosion) {
-                    return sum += explosion.objects.length;
-                }, 0);
             }
         }, {
             key: 'render',
