@@ -1,0 +1,24 @@
+{
+  "name": "@hollowman6/canvas-nest",
+  "version": "1.0.0",
+  "description": "Canvas that explode after a click. (点击后粒子爆炸喷墨)",
+  "main": "canvas-explosion-click.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/HollowMan6/canvas-explosion-click.js.git"
+  },
+  "keywords": [
+    "Canvas",
+    "Nest"
+  ],
+  "author": "Hollow Man",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HollowMan6/canvas-explosion-click.js/issues"
+  },
+  "homepage": "https://github.com/HollowMan6/canvas-explosion-click.js#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+}
