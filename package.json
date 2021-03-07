@@ -23,11 +23,7 @@
     "extends": [
       "plugin:prettier/recommended"
     ],
-    "ignorePatterns": [
-      "**/*.min.js",
-      "CV/pdfjs",
-      "FreDuino/blockly-master"
-    ],
+    "ignorePatterns": [],
     "rules": {
       "prettier/prettier": "error"
     },
